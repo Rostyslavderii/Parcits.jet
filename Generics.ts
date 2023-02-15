@@ -29,10 +29,10 @@ interface Page {
   numberPage: number;
 }
 
-const pageAnnotation: Pick<Page, 'annotation' | 'numberPage'> = {
-  annotation: 'Small page',
-  numberPage: 1,
-};
+// const pageAnnotation: Pick<Page, 'annotation' | 'numberPage'> = {
+//   annotation: 'Small page',
+//   numberPage: 1,
+// };
 
 
 interface Person {
@@ -269,4 +269,6 @@ function exstraValue<extends object, U extends keyof T>(Obj: T, key: U) {
 
 const field = exstraValue ( {
     name: 'lara' 
-}, 'age' );
+}, 'age');
+
+
