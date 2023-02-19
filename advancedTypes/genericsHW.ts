@@ -105,18 +105,26 @@ class Page extends Component {
   }
 }
 
-// У вас есть следующие классы
 
-class Component {
-  constructor (public props:T) {
+class Componenty<T> {
+  
+  constructor(public props: T) {
 
   }
+  
 }
 
-class Page extends Component {
+interface IPerson {
+  name: string;
+  age: number;
+  title: undefined | boolean; 
+}
+
+
+class Pago extends Componenty<IPerson> {
   pageInfo () {
     console.log(this.props.title);
   }
 }
 
-// Только добавляя дженерики для классов и интерфейс уберите ошибку.
+
