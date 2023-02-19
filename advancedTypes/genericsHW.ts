@@ -126,5 +126,3 @@ class Pago extends Componenty<IPerson> {
     console.log(this.props.title);
   }
 }
-
-
